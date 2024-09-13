@@ -27,6 +27,9 @@ console.log(1 + 2 + "2"); // 1+2+"2 => 1+2=3 "2" => 32 merged
 
 console.log( (3+4) * 5 % 3); // (3+4) * 5 % 3 => (7) * 5%3 => 35 % 3 => 2 reminder. so, 2 will be the answer.
 
+
+console.log(+true); // o/p = 1
+
 console.log(true); // true ans
 
 let num1, num2, num3 = 1 // NaN
