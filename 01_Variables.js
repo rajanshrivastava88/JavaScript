@@ -10,7 +10,7 @@ const accountId = 123456
 let accountEmail="rajan@gmail.com"
 var accountPassword="98765"
 accountAddress = "Delhi"
-let accountState;
+let accountState;  // undefined value
 
 // Mostly we'll use const and let
 
@@ -18,7 +18,6 @@ let accountState;
 
 
 /*
-
 
 javascript me hum bina kisi variable ko assign kiye v direct value ko assign kar sakte hai but it is not a good practice
 
