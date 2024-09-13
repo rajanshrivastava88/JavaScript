@@ -16,7 +16,13 @@ let accountState;
 
 // accountId=2
 
+
 /*
+
+
+javascript me hum bina kisi variable ko assign kiye v direct value ko assign kar sakte hai but it is not a good practice
+
+Eg : accountAddress = "Delhi"
 
 Prefer not to use var
 beacuse of issue in block scope and functional scope.
