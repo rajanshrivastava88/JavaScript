@@ -36,8 +36,10 @@ let num1, num2, num3 = 1 // NaN
 let num4= num1+num2+num3
 console.log(num4);
 
+
 num1 = num2 = num3 = 2+2
 console.log(num1)
+
 
 let gameScore = 100
 gameScore++; // 101 result
@@ -126,6 +128,13 @@ var str = "Number is:" + num; //+num is Implicit conversion to string
 console.log(str);
 
 
+let no = 88
+let noIS = "The Number is: " +no;
+console.log(noIS);
+console.log(typeof no);
+
+
+
 /*
 
 5. Explicit Type Conversion:
@@ -137,7 +146,21 @@ parseInt(), and parseFloat().
 
 */
 
-var str = "10";
-var num ="Num is:" +str; // Explicit conversion to number using unary operator
-console.log(num);
-console.log(typeof(num));
+
+let strs = "10";
+let numss ="Num is:" +strs; // Explicit conversion to number using unary operator
+console.log(numss);
+console.log(typeof(numss));
+
+
+let strings = 80;
+let numbers ="Number is:" +strings; 
+console.log(numbers);
+console.log(typeof(numbers));
+
+
+let st = 80;
+let nu ="Number is:" -st; 
+
+console.log(nu); // NaN
+console.log(typeof(nu));
