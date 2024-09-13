@@ -55,8 +55,12 @@ const myFunction = function(){
 
 // ========================================================================
 
+
+
 // Memory 2 types 
+
 // 1. Stack Type or Stack Memory (Primitive) stack me value ka copy milta hai
+
 // 2. Heap Type or Heap Memory (Non Primitive) heap me value ka reference milta hai
 
 let myYoutubename = "RajanSrivastava"
