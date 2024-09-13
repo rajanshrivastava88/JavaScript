@@ -17,9 +17,9 @@ console.log(null <= 0);  // null treated as 0 bcz for comparison null is convert
 console.log("2" > 1);  // string is converted in number in javascript and make it 2 is greater than 1
 console.log("02" > 0);  // 
 
-console.log(null > 0);  // null treated as 0 bcz for comparison null is converted as 0 (number)
-console.log(null == 0); 
-console.log(null >= 0);  
+console.log(undefined == 0);  // null treated as 0 bcz for comparison null is converted as 0 (number)
+console.log(undefined > 0); 
+console.log(undefined < 0);  
 
 
 // The reason is that an equality check == and comparisions >< >= <= work differently
