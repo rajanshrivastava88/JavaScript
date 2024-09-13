@@ -16,6 +16,13 @@ let accountState;
 
 // accountId=2
 
+/*
+
+Prefer not to use var
+beacuse of issue in block scope and functional scope.
+
+*/
+
 accountEmail="rajansri88@gmail.com"
 accountPassword= 123456
 accountAddress="Utter Pradesh"
@@ -39,7 +46,6 @@ let var3 = "Srivastava"
 console.table([var1, var2, var3]); // table is used to print the values in the tabular form 
 
 
-
 /*
 
  let and const are used most of the time because they provide better control over variable scope and immutability 
@@ -58,3 +64,26 @@ like let and const. This can lead to unexpected behavior and bugs, especially in
 variable names might clash due to hoisting.
 
 */
+
+
+
+const myId = 9898
+let myEmail="anish@gmail.com"
+var myPassword="5432"
+myAddress = "Noida"
+let myState;
+
+//myId = 2 // in const variable -> account id will not be changed because its already assigned so it will not be changed.\
+
+//console.log(myId);
+
+
+
+myEmail="srivastavaji88@gmail.com"
+myPassword= 123456
+myAddress="Utter Pradesh"
+console.table([myId, myEmail, myPassword, myAddress, myState])
+
+// Except const variable value all other variable (var, let) value has changed
+
+// Mostly we'll use const and let
