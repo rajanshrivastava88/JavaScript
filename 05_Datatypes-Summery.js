@@ -18,7 +18,7 @@ Answer:: JavaScript is a dynamically typed language. but TypeScript is a statica
 //  7 types : String, Number, Boolean, null(empty), undefined, Symbol, BigInt
 
 const score = 100
-const scoreValue = 100.3
+const scoreValue = 100.3 // In javascript there is no concept of Decimal it will comes under Number
 
 const isLoggedIn = false
 const outsideTemp = null
@@ -27,7 +27,7 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-//console.log(id === anotherId);
+//console.log(id === anotherId); // False // is (id === anotherId) (=== (equal to))
 
 // const bigNumber = 3456543576654356754n  // biginit datatype 
 
