@@ -37,22 +37,29 @@ user defined data types like objects arrays and functions.
 
 //console.log(3+3, "Rajan") 
 
+
+/*
+
+
 let name="Rajan"
 let age=24
 let isLoggedIn = false
 
 
-// number => e to power 53
+*/
 
-// 7 types of datatypes
 
-// 1. bigint
-// 2. string => " Tushar"
-// 3. boolean => true or false
-// 4. null => stand-alone value
-// 5. undefined =>
-// 6. symbol => unique
-// 7. Number
+
+// 7 types of datatypes (Primitive Data Types)
+
+// 1. Number => 2 to power 53
+// 2. bigint => Used in large type of numbers or websites where data is too large
+// 3. string => "Rajan", 'rajan'
+// 4. boolean => true or false
+// 5. null => standalone value
+// 6. undefined => variable defined but value not defined
+// 7. symbol => unique
+ 
 
 // object
 
@@ -74,5 +81,10 @@ console.log(typeof "Apple", typeof "Potato", typeof 88, typeof true);
 
 
 
-let a = "Rajan Srivastava";
-console.log(a)
+
+
+console.log(typeof "Rajan Srivastava");
+console.log(typeof null);  // type => object
+console.log(typeof undefined); // undefined
+
+
