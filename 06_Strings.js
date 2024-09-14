@@ -4,15 +4,29 @@
 const name = "Rajan"
 const repoCount = 50
 
-// console.log(name + repoCount + " Value");
+console.log(name + repoCount +  " Value");
 
-//console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
+//console.log(`Hello my name is ${name} and my repo count is ${repoCount}`); // This is known as string interpolation
+
+console.log(`Hello my Name is ${name} and I am working as a Intern in ABP Networks`);
 
 
-const gameName = new String('rajan-hc-com')
+const gameName = new String('rajan-rj-com')
 
-// console.log(gameName[0]);
-// console.log(gameName.__proto__);
+// String Accessing through Indexes
+
+
+console.log(gameName[0]);
+console.log(gameName[1]);
+console.log(gameName[2]);
+console.log(gameName[3]);
+console.log(gameName[4]);
+console.log(gameName[5]);
+console.log(gameName[6]);
+console.log(gameName[7]);
+
+console.log(gameName[-1]); // In javascript we can't access strings through -ve indexes
+console.log(gameName[-2]);
 
 
 // console.log(gameName.length);
