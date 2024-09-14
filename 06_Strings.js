@@ -38,7 +38,7 @@ console.log(gameName.indexOf('r')); // indexOf shows the 'r' is placed at which 
 const newString = gameName.substring(0, 4) // it will take characters from 0 to 4 means => raja
 console.log(newString);
 
-const anotherString = gameName.slice(-1, 4) // In slice we can give -ve index to find the characters
+const anotherString = gameName.slice(1, 4) 
 console.log(anotherString);
 
 const newStringOne = "   rajan    "
