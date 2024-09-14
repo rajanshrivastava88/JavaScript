@@ -29,28 +29,31 @@ console.log(gameName[-1]); // In javascript we can't access strings through -ve 
 console.log(gameName[-2]);
 
 
-// console.log(gameName.length);
-// console.log(gameName.toUpperCase());
-//console.log(gameName.charAt(2));
-//console.log(gameName.indexOf('t'));
+console.log(gameName.length); // Used the find the length of the string
+console.log(gameName.toUpperCase()); // Converts all the string into Upper case
+console.log(gameName.charAt(2)); // CharAt tells the at the 2 char in string which letter is placed
+console.log(gameName.toLowerCase());
+console.log(gameName.indexOf('r')); // indexOf shows the 'r' is placed at which index number
 
-const newString = gameName.substring(0, 4)
+const newString = gameName.substring(0, 4) // it will take characters from 0 to 4 means => raja
 console.log(newString);
 
-const anotherString = gameName.slice(-2, 5)
+const anotherString = gameName.slice(-1, 4) // In slice we can give -ve index to find the characters
 console.log(anotherString);
 
-const newStringOne = "   hitesh    "
-//console.log(newStringOne);
-//console.log(newStringOne.trim());
+const newStringOne = "   rajan    "
+console.log(newStringOne);
+console.log(newStringOne.trim()); // Trim is used to remove starting & ending spaces from the strings
 
-const url = "https://hitesh.com/hitesh%20choudhary"
+const url = "https://rajan.com/rajan%20srivastava"
 
-//console.log(url.replace('%20', '-'))
+console.log(url.replace('%20', '-'))
 
-//console.log(url.includes('sundar'))
+console.log(url.includes('rajan')); // includes tells 'rajan' is available in the url or not
 
-//console.log(gameName.split('-'));
+console.log(url.includes('sundar'))
+
+console.log(gameName.split('-'));
 
 
 //let text = "Hello world, welcome to the universe.";
