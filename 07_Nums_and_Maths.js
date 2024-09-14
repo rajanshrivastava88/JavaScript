@@ -1,7 +1,7 @@
 // Numbers and Maths
 
 const score = 800
-//console.log(score);
+console.log(score);
 
 const balance = new Number(100) // new defines the type
 console.log(balance);
