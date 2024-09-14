@@ -3,20 +3,17 @@
 const score = 800
 console.log(score);
 
-const balance = new Number(100) // new defines the type
+const balance = new Number(120) // new defines the type
 console.log(balance);
 
-console.log(balance.toString().length);  // length=>it finds the total length of numbers and 
+console.log(balance.toString().length);  // length=>it finds the total length of numbers, toString is used to convert numbers into strings
+console.log(balance.toFixed(2)); // toFixed means precise the number after decimal
 
-// toString is used to convert numbers into strings
+const otherNumber = 123.8980
+console.log(otherNumber.toPrecision(4)); // it counts 3 no as it is same and 4 no will be roundoff no so the o/p is 124
 
-//console.log(balance.toFixed(1)); // toFixed means precise the number after decimal
-
-const otherNumber = 123.98980
-//console.log(otherNumber.toPrecision(4)); // it counts 3 no as it is same and 4 no will be roundoff no so the o/p is 124
-
-const hundred = 10000000
-//console.log(hundred.toLocaleString('en-IN'))
+const hundred = 10000000000000
+console.log(hundred.toLocaleString('en-IN'))
 
 
 // +++++++++++++++++++++++++++ Maths ++++++++++++++++++++++++++++++++
