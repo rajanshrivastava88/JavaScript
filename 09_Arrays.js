@@ -56,7 +56,55 @@ console.log("A","B", myNewArr);
 
 const myn1 = myNewArr.slice(0, 5) //Slice the indexing of 0 to 5 the 5th indexing will not be printed and 0 to 4 will be printed
 
-console.log(myn1);
-console.log(myNewArr.splice(1, 5)); // 1 is starting index and 5 is no of elements to be selected or deleted from the original array
+//console.log(myn1);
+//console.log(myNewArr.splice(1, 5)); // 1 is starting index and 5 is no of elements to be selected or deleted from the original array
+
+
+/*
+
+ Slice (): - Extracts a portion of an array without modifying the original array.
+
+Returns: A new array with the selected elements.
+
+Does not modify: The original array.
+
+
+Eg
+
+const arr = [1, 2, 3, 4, 5];
+const sliced = arr.slice(1, 4);
+console.log(sliced); // Output: [2, 3, 4]
+console.log(arr);    // Original array remains unchanged: [1, 2, 3, 4, 5]
+
+
+
+ splice() :- Adds, removes, or replaces elements in an array, modifying the original array.
+
+Returns: An array of removed elements (if any).
+
+Modifies: The original array.
+
+
+Ex :- (Remove Elements)
+
+const arr = [1, 2, 3, 4, 5];
+
+const spliced = arr.splice(1, 3); // Removes 3 elements starting from index 1
+console.log(spliced); // Output: [2, 3, 4]
+console.log(arr);     // Original array modified: [1, 5]
+
+
+
+Example :- (Add Elements)
+
+const arr = [1, 2, 5];
+
+arr.splice(2, 0, 3, 4); // Adds 3 and 4 at index 2
+console.log(arr); // Output: [1, 2, 3, 4, 5]
+
+
+
+ */
+
 
 
