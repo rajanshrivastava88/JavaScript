@@ -1,3 +1,5 @@
+
+
 // Array =>In javascript array is a collection of elements in which we can store any types of data
 
 const myArray = [0, 1, 2, 6, 8, "Rajan", "Tushar", 9.5 ]
