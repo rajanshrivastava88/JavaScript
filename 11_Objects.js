@@ -1,12 +1,64 @@
 //Objects 
 
+
+
 // Declare 2 types 
 
 // 1. Literals (Not Singleton available) 
 
-// 2. Constructor (Singleton available)
+/*
+
+2. Constructor (Singleton available)
+
+Eg- Object.create
+
+*/
+
+
+// Object Literals
+
+
+const mySymbol = Symbol["Key1"]
+
+const JsUser = {
+    name: "Rajan",
+    "full name": "Rajan Srivatava",
+    [mySymbol]: "myKey1",          // symbol
+    age: 25,
+    location: "New Delhi",
+    email: "rajan@gmail.com",
+    isLoggedIn: false,
+    lastLoginDays: ["Monday", "Saturday"]
+}
+
+console.log(JsUser.name);
+console.log(JsUser["email"]);
+console.log(JsUser["full name"]);
+console.log(JsUser[mySymbol]);
+
+
+JsUser.email = "rajan@chatgpt.com" // used to change or Override the email
+
+//Object.freeze(JsUser) // Used to freeze the objects after this no changes will be possible
+//JsUser.email = "rajan@microsoft.com"
+//console.log(JsUser);
+
+JsUser.greeting = function(){
+    console.log("Hello Js Students");
+}
+
+JsUser.greetingTwo = function(){
+    console.log(`Hello JS user, ${this.name}`);
+}
+
+console.log(JsUser.greeting());
+console.log(JsUser.greetingTwo());
+
+
+
 
 const rollno = Symbol("008115077")
+
 const rajan = {
     name: "Rajan",
     branch : "IT",
@@ -26,9 +78,13 @@ console.log(rajan);
 
 //Object.freeze(rajan)
 //console.log(rajan);
-
 rajan.Ph_N0 = "987656789"
 //console.log(rajan);
+
+
+
+// Functions
+
 
 rajan.welcome = function (){
     console.log("Welcome to my Youtube Channel");
