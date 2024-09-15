@@ -1,4 +1,4 @@
-
+// Arrays Part-2
 
 
 const fruits = new Array("Apple", "Mangos", "Grapes", "Bananas")
