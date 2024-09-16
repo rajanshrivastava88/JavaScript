@@ -4,11 +4,11 @@
 
 // Declare 2 types 
 
-// 1. Literals (Not Singleton available) 
+// 1. Literals (Not Singleton) 
 
 /*
 
-2. Constructor (Singleton available)
+2. Constructor (Singleton)
 
 Eg- Object.create
 
@@ -48,7 +48,7 @@ JsUser.greeting = function(){
 }
 
 JsUser.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
+    console.log(`Hello JS user, ${this.location}`);
 }
 
 console.log(JsUser.greeting());
