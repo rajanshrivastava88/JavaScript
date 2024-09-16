@@ -39,8 +39,6 @@ function addone(num){
 }
 
 
-
-
 addThree(5)
 const addThree = function(num){
     return num + 2
@@ -101,10 +99,6 @@ if (true) {
 }
 
 //console.log(username);
-
-
-
-
 
 
 
