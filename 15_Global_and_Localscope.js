@@ -9,24 +9,21 @@
 // console.log(d);
 
 
-var f = 88
+// var f = 88
+// let a = 300
+// if (true) {
+//     let b = 40
+//     const c = 50
+//     //var d = 60
+//     e = 70
+// }
 
-if (true) {
-    let b = 40
-    const c = 50
-    //var d = 60
-    e = 70
-}
+// //console.log(b);
+// //console.log(c);
+// //console.log(d);
+// console.log(e);
+// console.log(a);
 
-//console.log(b);
-//console.log(c);
-console.log(d);
-console.log(e);
-
-
-
-
-/*
 
 
 //var c = 300
@@ -34,15 +31,18 @@ let a = 300
 if (true) {
     let a = 10
     const b = 20
-    //console.log("INNER: ", a);
+    console.log("INNER: ", a, b);
+    //console.log(b);
+    
 
 }
 
-
-
-//console.log(a);
+console.log(a);
 //console.log(b);
 //console.log(c); 
+
+
+/*
 
 a = 500
 if (true) {
@@ -50,5 +50,6 @@ if (true) {
     const c = 90
     console.log("Inner :", a, c);
 }
+
 
 */
