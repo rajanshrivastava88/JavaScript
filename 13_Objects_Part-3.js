@@ -8,17 +8,17 @@ const course = {
     courseInstructor: "Rajan"
 }
 
-// course.courseInstructor
-// course.coursename
-// course.price
+course.courseInstructor
+course.coursename
+course.price
 
 
-const {courseInstructor} = course
-console.log(courseInstructor);
+// const {courseInstructor} = course
+// console.log(courseInstructor);
 
 
-//const {courseInstructor: teacher} =  course
-//console.log(teacher);
+const {courseInstructor: teacher} =  course
+console.log(teacher);
 
 
 const {courseInstructor: instructor, price: Rate, course: js} = course // now courseInstructor known as instructor
