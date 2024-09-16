@@ -9,13 +9,42 @@ function three(){
         console.log(usersname);
         
     }
-    console.log(website);
+    //console.log(website);
     
     four()
 }
 
-three()
+//three()
 
+
+if (true) {
+    const username = "Rajan"
+    if (username === "Rajan") {
+        const website = "flipkart"
+        //console.log(username + website);
+        
+    }
+    //console.log(website);
+    
+}
+
+//console.log(username);
+
+
+// ++++++++++++++++++++++++++++ interesting ++++++++++++++++++++++++++++++++
+
+console.log(addone(5));
+function addone(num){
+    return num + 1
+}
+
+
+
+
+addThree(5)
+const addThree = function(num){
+    return num + 2
+}
 
 
 
@@ -72,11 +101,6 @@ if (true) {
 }
 
 //console.log(username);
-
-
-
-
-
 
 
 
