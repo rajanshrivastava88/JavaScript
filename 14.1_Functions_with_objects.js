@@ -1,3 +1,4 @@
+
 // Functions with Objects
 
 
@@ -5,7 +6,7 @@ function calculateCartPrice(...num1){
     return num1
 }
 
-//console.log(calculateCartPrice(200, 400, 500, 2000));
+console.log(calculateCartPrice(200, 400, 500, 2000));
 
 
 
@@ -13,7 +14,7 @@ function calculateCartPrice1(val1, val2, val3, ...num1){  // function calculateC
     return num1
 }
 
-//console.log(calculateCartPrice1(100, 200, 300, 800, 200000));
+console.log(calculateCartPrice1(100, 200, 300, 800, 200000));
 
 
 
