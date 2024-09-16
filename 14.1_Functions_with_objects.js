@@ -9,8 +9,6 @@ function calculateCartPrice(...num1){
 
 
 
-
-
 function calculateCartPrice1(val1, val2, val3, ...num1){  // function calculateCartPrice(...num1)  ==> rest operator/Spread Operator
     return num1
 }
