@@ -42,12 +42,22 @@ collisions and unintended modifications.
 
 // Global variable
 
-var globalvariable = "I am a global variable";
+var globalVariable = "I am a global variable";
 
 function checkGlobalScope(){
     console.log(globalvariable); // I am a global variable
     
 }
+
+checkGlobalScope()
+console.log(globalVariable);
+
+
+
+
+
+
+
 
 
 function hoist(){
