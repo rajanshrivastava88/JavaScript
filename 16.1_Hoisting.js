@@ -119,7 +119,19 @@ outerFunction();
 
 
 
+/*
+What is Hoisting?
+Hoisting in JavaScript allows variables and function declarations to be used before they are declared. 
+However, it is essential to understand how hoisting works differently for variable declarations and 
+initializations, and function declarations and expressions.
 
+Hoisting of Variables
+In JavaScript, variable declarations using var are hoisted to the top of their scope. However, only the 
+declaration is hoisted, not the initialization. This can lead to unexpected behavior if not properly 
+understood.
+
+
+*/
 
 
 
