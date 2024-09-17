@@ -39,6 +39,17 @@ collisions and unintended modifications.
 
 */
 
+
+// Global variable
+
+var globalvariable = "I am a global variable";
+
+function checkGlobalScope(){
+    console.log(globalvariable); // I am a global variable
+    
+}
+
+
 function hoist(){
     console.log(a);
     
