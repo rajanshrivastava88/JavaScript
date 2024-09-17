@@ -95,7 +95,15 @@ if (true) {
 console.log(blockScopedVariable); // Error: blockScopedVariable is not defined
 console.log(anotherBlockScopedVariable); // Error: anotherBlockScopedVariable is not defined
 
+/*
 
+Lexical Scope :
+
+Lexical scope, also known as static scope, refers to the fact that the accessibility of variables is 
+determined by the physical structure of the code. In other words, a variable’s scope is defined by its 
+location within the source code, and nested functions have access to variables declared in their outer scope.
+
+*/
 
 
 function hoist(){
