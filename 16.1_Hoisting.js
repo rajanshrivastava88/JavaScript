@@ -105,6 +105,23 @@ location within the source code, and nested functions have access to variables d
 
 */
 
+function outerFunction() {
+    var outerVariable = "I am from outer function";
+
+    function innerFunction() {
+        console.log(outerVariable); // Output: I am from outer function
+    }
+
+    innerFunction();
+}
+
+outerFunction();
+
+
+
+
+
+
 
 function hoist(){
     console.log(a);
