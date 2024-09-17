@@ -190,6 +190,22 @@ console.log(globalVar); // Output: Global
 console.log(localVar); // Error: localVar is not defined
 
 
+/*
+
+Example 2: Function Scope and Hoisting
+
+This example demonstrates how variable and function declarations are hoisted within their respective scopes.
+
+*/
+
+console.log(hoistedVar); // Output: undefined
+var hoistedVar = "Hoisted Variable";
+
+function hoistedFunction() {
+    console.log("Hoisted Function");
+}
+
+hoistedFunction(); // Output: Hoisted Function
 
 
 
