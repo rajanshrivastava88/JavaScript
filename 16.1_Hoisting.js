@@ -76,8 +76,24 @@ checkFunctionScope();
 console.log(localVariable); // Error: localVariable is not defined
 
 
+/*
+
+Block Scope: Block scope is a more recent addition to JavaScript, introduced with ES6 (ECMAScript 2015). 
+             Variables declared with let and const are block-scoped, meaning they are only accessible within 
+             the nearest enclosing block (e.g., {}, if, for, while statements).
+
+*/
 
 
+if (true) {
+    let blockScopedVariable = "I am block scoped";
+    const anotherBlockScopedVariable = "I am also block scoped";
+    console.log(blockScopedVariable); // Output: I am block scoped
+    console.log(anotherBlockScopedVariable); // Output: I am also block scoped
+}
+
+console.log(blockScopedVariable); // Error: blockScopedVariable is not defined
+console.log(anotherBlockScopedVariable); // Error: anotherBlockScopedVariable is not defined
 
 
 
