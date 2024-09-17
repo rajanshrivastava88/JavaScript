@@ -167,6 +167,30 @@ function hoistedFunction() {
     console.log("I am a hoisted function");
 }
 
+/*
+
+Example 1: Global and Local Scope
+
+Understanding the difference between global and local scope is crucial for avoiding variable naming 
+conflicts and unintended behavior in your code.
+
+
+*/
+
+var globalVar = "Global";
+
+function testScope() {
+    var localVar = "Local";
+    console.log(globalVar); // Output: Global
+    console.log(localVar); // Output: Local
+}
+
+testScope();
+console.log(globalVar); // Output: Global
+console.log(localVar); // Error: localVar is not defined
+
+
+
 
 
 
