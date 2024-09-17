@@ -137,7 +137,15 @@ var hoistedVariable = "I am hoisted";
 console.log(hoistedVariable); // Output: I am hoisted
 
 
+/*
 
+Hoisting with let and const
+
+Variables declared with let and const, introduced in ES6, are also hoisted but in a different way. 
+While the declarations are hoisted, they are not initialized until the code execution reaches their 
+line of declaration. Accessing these variables before their initialization results in a ReferenceError.
+
+*/
 
 
 
