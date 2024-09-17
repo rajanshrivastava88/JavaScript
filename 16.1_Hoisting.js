@@ -65,6 +65,15 @@ and block scope.
 Function Scope: Variables declared within a function are function-scoped. 
 This means that they are only accessible within that function and cannot be accessed from outside it.
 
+*/
+
+function checkFunctionScope() {
+    var localVariable = "I am a local variable";
+    console.log(localVariable); // Output: I am a local variable
+}
+
+checkFunctionScope();
+console.log(localVariable); // Error: localVariable is not defined
 
 
 
