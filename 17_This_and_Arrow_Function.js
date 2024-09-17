@@ -1,8 +1,9 @@
+
+
 // This and Arrow Function
 
 
 /*
-
 Arrow Function => Arrow functions allow us to write shorter function 
 
 syntax: let myFunction = (a, b) => a * b;
@@ -59,7 +60,6 @@ console.log(without_parentheses("Please say, Har Har Mahadev"));
 This Keyword 
 
 With arrow functions, this keyword always represents the object that defined the arrow function.
-
 
 */
 
