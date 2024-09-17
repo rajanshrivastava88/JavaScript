@@ -27,6 +27,18 @@ They can only be accessed within that specific function or block.
 
 */
 
+/*
+
+Global Scope
+
+Variables that are declared outside of any function or block are considered to be in the global scope. 
+They are accessible throughout the entire script, which means you can access and modify them from any 
+part of your code. This can be useful for variables that need to be accessed frequently from different 
+places in your program, but it can also lead to potential issues if not managed carefully, such as naming 
+collisions and unintended modifications.
+
+*/
+
 function hoist(){
     console.log(a);
     
