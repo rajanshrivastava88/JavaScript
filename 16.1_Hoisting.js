@@ -148,6 +148,28 @@ line of declaration. Accessing these variables before their initialization resul
 */
 
 
+console.log(hoistedLet); // Error: Cannot access 'hoistedLet' before initialization
+let hoistedLet = "I am not hoisted";
+
+
+
+/*
+Hoisting of Functions
+
+Function declarations are also hoisted to the top of their scope. 
+This allows you to call a function before you define it in the code.
+
+*/
+
+hoistedFunction(); // Output: I am a hoisted function
+
+function hoistedFunction() {
+    console.log("I am a hoisted function");
+}
+
+
+
+
 
 function hoist(){
     console.log(a);
