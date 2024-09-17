@@ -132,6 +132,12 @@ understood.
 
 
 */
+console.log(hoistedVariable); // Output: undefined
+var hoistedVariable = "I am hoisted";
+console.log(hoistedVariable); // Output: I am hoisted
+
+
+
 
 
 
