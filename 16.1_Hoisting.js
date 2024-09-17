@@ -207,6 +207,29 @@ function hoistedFunction() {
 
 hoistedFunction(); // Output: Hoisted Function
 
+/*
+
+Example 3: Block Scope and let/const
+
+This example illustrates the block-scoping behavior of variables declared with let and const.
+
+*/
+
+function checkBlockScope() {
+    if (true) {
+        let blockVar = "Block Scoped";
+        const blockConst = "Block Constant";
+        console.log(blockVar); // Output: Block Scoped
+        console.log(blockConst); // Output: Block Constant
+    }
+
+    console.log(blockVar); // Error: blockVar is not defined
+    console.log(blockConst); // Error: blockConst is not defined
+}
+
+checkBlockScope();
+
+
 
 
 
