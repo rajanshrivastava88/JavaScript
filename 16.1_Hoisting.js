@@ -50,7 +50,20 @@ function checkGlobalScope(){
 }
 
 checkGlobalScope()
-console.log(globalVariable);
+console.log(globalVariable); // Output: I am a global variable
+
+
+
+/*
+
+Local Scope
+
+Local scope refers to variables that are declared within a specific function or block and are only 
+accessible within that function or block. There are different types of local scope: function scope 
+and block scope.
+
+Function Scope: Variables declared within a function are function-scoped. 
+This means that they are only accessible within that function and cannot be accessed from outside it.
 
 
 
