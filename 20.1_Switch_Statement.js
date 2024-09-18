@@ -115,7 +115,6 @@ switch (month1) {
         console.log("december");
         break;
 
-
     default:
         console.log("default case match");
         break;
