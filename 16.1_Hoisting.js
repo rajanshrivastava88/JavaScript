@@ -253,6 +253,19 @@ var inner = outerFunction();
 inner();
 
 
+/*
+
+Example 5: Variable Hoisting with var
+
+Understanding how var declarations are hoisted can help prevent unexpected behaviors in your code.
+
+*/
+
+console.log(varHoisted); // Output: undefined
+var varHoisted = "This is a hoisted variable";
+console.log(varHoisted); // Output: This is a hoisted variable
+
+
 
 
 
