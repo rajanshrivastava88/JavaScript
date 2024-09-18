@@ -14,12 +14,17 @@ if(false){
 
 */
 
+if(2 === "2"){
+    console.log("executed");
+    
+}
+
 
 
 //const isUserloggedIn = true
 const temperature = 35
 
-if ( temperature === 40 ){
+if ( temperature === 50 ){   // temperature < 50
     //console.log("less than 50");
 }
 else 
@@ -40,7 +45,7 @@ if (score > 100) {
     //console.log("Print True value");  //console.log(`User power: ${power}`);
 }
 
-//console.log(`User power: ${power}`);
+//console.log(`User power: ${power}`);  // scope problem
 
 
 const balance = 1000
