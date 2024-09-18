@@ -122,12 +122,16 @@ const chaiwala = () => {  // in this, function is replaced by arrow
 chaiwala()
 
 
+//   () => {} ---- Arrow Function
+
 //const addTwoNo = (num1, num2) => {   // in curly braces we can use return values
 //     return num1 + num2
 // }
 
 //console.log(addTwoNo(8,8));
 
+
+// implicit return -> means without return {}
 
 const numbers = (num1, num2) => num1 + num2
 console.log(numbers(6,7));
@@ -136,6 +140,8 @@ console.log(numbers(6,7));
 const addTwoNo = (num1, num2) => (num1 + num2)  // but without parentheses we cann't return values
 console.log(addTwoNo(8, 5));
 
+
+// Object return
 const broshree = (num1, num2) => ({username : "Tushar", marks: num1 + num2})
 console.log(broshree(80, 85)); 
 
