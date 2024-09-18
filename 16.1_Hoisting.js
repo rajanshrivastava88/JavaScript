@@ -230,6 +230,30 @@ function checkBlockScope() {
 checkBlockScope();
 
 
+/*
+
+Example 4: Lexical Scope and Closures
+
+This example shows how lexical scope allows nested functions to access variables declared in their outer scope, 
+demonstrating the concept of closures.
+
+*/
+
+function outerFunction() {
+    var outerVariable = "I am from outer function";
+
+    function innerFunction() {
+        console.log(outerVariable); // Output: I am from outer function
+    }
+
+    return innerFunction;
+}
+
+var inner = outerFunction();
+inner();
+
+
+
 
 
 
