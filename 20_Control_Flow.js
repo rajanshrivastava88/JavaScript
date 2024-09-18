@@ -1,5 +1,21 @@
 // if statement
 
+
+
+/*
+if(true){
+
+}
+
+
+if(false){
+    
+}
+
+*/
+
+
+
 //const isUserloggedIn = true
 const temperature = 35
 
