@@ -14,7 +14,7 @@ else
 
 
 
-const userEmail = []  // the value will be true
+const userEmail = []  // array, the value will be true
 
 if (userEmail) {
     console.log("Got user email");
@@ -30,14 +30,20 @@ if (userEmail) {
 //truthy values
 // "0", 'false', " ", [], {}, function(){}
 
+
+
+
+
 // if (userEmail.length === 0) {
 //     console.log("Array is empty");
 // }
 
+
+
 const emptyObj = {}
 
 if (Object.keys(emptyObj).length === 0) {
-    //console.log("Object is empty");
+    console.log("Object is empty");
 }
 
 
@@ -52,6 +58,7 @@ if (Object.keys(userObject).length === 0) {
 
 
 // Nullish Coalescing Operator (??): null undefined
+
 
 let val1, val2, val3, val4;
 
