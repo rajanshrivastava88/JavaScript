@@ -16,7 +16,6 @@ if(false){
 
 if(2 === "2"){
     console.log("executed");
-    
 }
 
 
@@ -50,10 +49,18 @@ if (score > 100) {
 
 const balance = 1000
 
+/*
+if (balance > 500) console.log("test Successful"); // Implicite scope (Don't try this, because it's not good for coding)
+*/
+
+
 if (balance < 500) 
 //console.log("test")
 //else
 //console.log("test2");
+
+
+
 
 if (balance < 500) 
 {
@@ -73,6 +80,9 @@ else
 {
     // console.log("less than 1200");
 }
+
+
+// Check Multiple Conditions
 
 const userLoggedIn = true
 const debitCard = true
