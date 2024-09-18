@@ -76,6 +76,8 @@ val4 = null ?? 5 ?? 50
 
 
 // Terniary Operator
+
+
 // condition ? true : false
 
 const chai = 100
