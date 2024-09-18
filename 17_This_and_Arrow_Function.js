@@ -1,7 +1,5 @@
 
-
 // This and Arrow Function
-
 
 /*
 Arrow Function => Arrow functions allow us to write shorter function 
@@ -13,7 +11,7 @@ syntax: let myFunction = (a, b) => a * b;
 // Arrow function
 
 let myFunction = (a, b) => a * b;
-console.log(myFunction(4, 5)); 
+//console.log(myFunction(4, 5)); 
 
 
 // Before arrow
@@ -52,16 +50,31 @@ hy = (st) => "Hello " + st;
 // Arrow Function Without Parentheses:
 
 without_parentheses = val => "Hello " + val;
-console.log(without_parentheses("Please say, Har Har Mahadev"));
+//console.log(without_parentheses("Please say, Har Har Mahadev"));
 
 
 /*
 
 This Keyword 
 
+This is used to refer current context(value) for accessing.
 With arrow functions, this keyword always represents the object that defined the arrow function.
 
 */
+
+const user = {
+    username: "Rajan",
+    price: 999,
+
+    welcomeMessages: function() {
+        console.log(`${this.username}, Welcome to website`);
+        
+    }
+}
+
+user.welcomeMessages()
+user.username = "sam" // rajan replace with sam
+user.welcomeMessages() // o/p = sam, Welcome to website
 
 
 
