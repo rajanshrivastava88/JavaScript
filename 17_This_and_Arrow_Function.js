@@ -13,7 +13,6 @@ syntax: let myFunction = (a, b) => a * b;
 let myFunction = (a, b) => a * b;
 //console.log(myFunction(4, 5)); 
 
-
 // Before arrow
 
 let hello = "";
@@ -22,7 +21,6 @@ hello = function() {
   return "Hello World";
 }
 //console.log(hello());
-
 
 
 // With Arrow Function:
@@ -46,7 +44,6 @@ hy = (st) => "Hello " + st;
 //console.log(hy("Tushar, Kaise ho Tushar"));  // Arrow Function With Parameters:
 
 
-
 // Arrow Function Without Parentheses:
 
 without_parentheses = val => "Hello " + val;
@@ -68,13 +65,15 @@ const user = {
 
     welcomeMessages: function() {
         console.log(`${this.username}, Welcome to website`);
+        console.log(this);
         
     }
 }
 
-user.welcomeMessages()
-user.username = "sam" // rajan replace with sam
-user.welcomeMessages() // o/p = sam, Welcome to website
+// user.welcomeMessages()
+// user.username = "sam" // rajan replace with sam
+// user.welcomeMessages() // o/p = sam, Welcome to website
+// console.log(this); // {} empty object
 
 
 
@@ -83,20 +82,20 @@ const detail = {
     roll_no: 811507721,
 
     welcomeMessage : function() {
-        // console.log(`${this.username} welcome to shark tank season3`);
-        // console.log(this);
+        //console.log(`${this.username} welcome to shark tank season3`);
+        //console.log(this);
     }
 }
 
-//detail.welcomeMessage()
-
-//detail.username = "Tushar"
-//detail.welcomeMessage()
-//detail.welcomeMessage()
+// detail.welcomeMessage()
+// detail.username = "Tushar"
+// detail.welcomeMessage()
+// detail.welcomeMessage()
 //console.log(this);    
 
 function chai() {
-    //console.log(this);
+    let username = "rajan"
+    //console.log(this.username);
 }
 
 //chai()   // this functions returns the all properties of the function using this keyword
@@ -106,23 +105,21 @@ const coffee = function() {
     let name = "Rajan"
     let lastname = "Kumar"
 
-    console.log(this.name);
+    //console.log(this.name);
 }
 
 //coffee()  
 
 //undefined =>>> because this keyword in the function doesn't have any property which we are trying to access.
 
-                        
 
 
-
-const chaiwala = () => {
+const chaiwala = () => {  // in this, function is replaced by arrow
     let username = "rajan"
     console.log(this);
 }
 
-//chaiwala()
+chaiwala()
 
 
 //const addTwoNo = (num1, num2) => {   // in curly braces we can use return values
