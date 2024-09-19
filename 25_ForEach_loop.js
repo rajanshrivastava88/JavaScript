@@ -1,4 +1,21 @@
 
+// forEach loop
+
+const codings = ['js', 'ruby', 'java', 'python', 'cpp']
+
+// coding.forEach( function (val) {
+//     console.log(val);
+// } )
+
+
+const tech = ['HTMl', 'CSS', 'JS', 'Python', 'Java', 'C++']
+
+tech.forEach ( function (value){
+    console.log(value);
+    
+});
+
+
 // for each loop
 
 const coding = ['js', 'ruby', 'java', 'python', 'cpp']
