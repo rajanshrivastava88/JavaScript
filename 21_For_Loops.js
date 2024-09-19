@@ -35,8 +35,14 @@ for(let i = 1; i<=10; i++) {
 
 
 
+// Break and Continue
 
+// Print 1 t0 20 numbers
 
+for (let index = 1; index <= 20; index++){
+    console.log(`Value of i is ${index}`);
+   
+}
 
 
 // for (let i = 7; i < 17; i++) 
