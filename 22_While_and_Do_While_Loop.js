@@ -11,6 +11,16 @@ While loop
 
 */
 
+
+let indexes = 0
+while (indexes <= 20)
+{
+    console.log(`Value of Indexes is ${indexes}`);
+    indexes = indexes + 2
+    
+}
+
+
 // program to display numbers from 1 to 5
 // initialize the variable
 
@@ -31,8 +41,11 @@ let index = 0
 //     index = index + 2
 // }
 
-let myArray = ['Mahadev Ji', "Maa Parvati Ji", "Shri Ganesh ji", "Maa Sarswati ji", 
-"Maa Laxmi ji", "Kumar Kartikey ji", "Savi Devi ji Aur Devta Gan ji"]
+
+
+
+
+let myArray = ['Ram', 'Krishna', 'Shambhu']
 
 let arr = 0
 while (arr < myArray.length) {
@@ -40,11 +53,8 @@ while (arr < myArray.length) {
     arr = arr + 1
 }
 
-let score = 11
-do {
-    console.log(`Score is ${score}`);
-    score++
-} while (score <= 10);
+
+
 
 
 
@@ -65,3 +75,30 @@ do {
 while (j < 10); 
 
 console.log(j);
+
+
+
+
+
+// let score = 5
+// do {
+//     console.log(`Score is ${score}`);
+//     score++
+// } while (score <= 10);
+
+
+
+// let scores = 1
+// do {
+//     console.log(`Score is ${scores}`);
+//     scores++
+// } while (scores <= 10);
+
+
+
+let score1 = 11
+do {
+    console.log(`Score is ${score1}`);
+    score1++
+} while (score1 <= 10);
+
