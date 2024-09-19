@@ -11,15 +11,17 @@ const myObject = {
 }
 
 for (const key in myObject) {
-    //console.log(myObject[key]);
+    console.log(myObject[key]);
 
 }
 
 for (const key in myObject) {
-   // console.log(`${key} shortcut is for ${myObject[key]}`);
+    console.log(`${key} shortcut is for ${myObject[key]}`);
 }
 
 
+
+// By using Array
 
 const programming = ['Js', 'rb', 'ry', 'Java', 'Cpp']
 
