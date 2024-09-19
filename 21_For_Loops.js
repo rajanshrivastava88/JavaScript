@@ -24,25 +24,17 @@ for (let i = 0; i <= 10; i++) {
 // 2nd Example
 
 for(let i = 1; i<=10; i++) {
-    console.log(`Outer loop value: ${i}`);
+    //console.log(`Outer loop value: ${i}`);
     
     for(let j = 1; j<=10; j++){
         //console.log(`Inner loop value ${j} and inner loop ${i}`);
-        console.log(i + '*' + j + ' = ' + i*j);
+        //console.log(i + '*' + j + ' = ' + i*j);
         
     }
 }
 
 
 
-// Break and Continue
-
-// Print 1 t0 20 numbers
-
-for (let index = 1; index <= 20; index++){
-    console.log(`Value of i is ${index}`);
-   
-}
 
 
 // for (let i = 7; i < 17; i++) 
@@ -97,7 +89,7 @@ for(let i=1; i<=7; i++)
             a+=" "
         }
     }
-    console.log(a);
+    //console.log(a);
 }
 
 
@@ -143,4 +135,30 @@ for (let i = 1; i <= 5; i++)
     //console.log(i + '*' + j + ' = ' + i*j );
    }
     
+}
+
+
+
+
+// Break and Continue
+
+// Print 1 t0 20 numbers
+
+for (let index = 1; index <= 20; index++){
+    if (index == 5) {
+        console.log("Detected 5");
+        break
+    }
+    console.log(`Value of i is ${index}`);
+   
+}
+
+
+for (let index = 1; index <= 20; index++){
+    if (index == 5) {
+        console.log("Detected 5");
+        continue
+    }
+    console.log(`Value of i is ${index}`);
+   
 }
