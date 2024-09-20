@@ -54,10 +54,21 @@ const books = [ // There are many objects (And the user will apply filter)
 
 ];
 
-const userBooks = books.filter( (bk) => bk.genre === 'History')
+let userBooks = books.filter( (bk) => bk.genre === 'History')
+//console.log(userBooks);
 
 const userBooks1 = books.filter( (bk) => bk.genre === 'Science')
+//console.log(userBooks1);
+
+
+//userBooks = books.filter( (bk) => { return bk.publish >= 2000})
+//console.log(userBooks);
+
+
+
+userBooks = books.filter( (bk) => { 
+    return bk.publish >= 1995 && bk.genre === "History"
+})
 
 console.log(userBooks);
-console.log(userBooks1);
 
