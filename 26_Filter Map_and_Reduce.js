@@ -41,7 +41,7 @@ console.log(newNums);
 
 
 
-const books = [
+const books = [ // There are many objects (And the user will apply filter)
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004},
     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008},
     { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007},
@@ -52,6 +52,12 @@ const books = [
     { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016},
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989},
 
+];
 
+const userBooks = books.filter( (bk) => bk.genre === 'History')
 
-]
+const userBooks1 = books.filter( (bk) => bk.genre === 'Science')
+
+console.log(userBooks);
+console.log(userBooks1);
+
