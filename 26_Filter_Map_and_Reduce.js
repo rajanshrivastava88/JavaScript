@@ -1,5 +1,5 @@
 
-// Filter Map and Reduce
+// Filter 
 
 const coding = ["Js", "ruby", "Java", "Python", "Cpp"]
 
@@ -72,3 +72,23 @@ userBooks = books.filter( (bk) => {
 
 console.log(userBooks);
 
+
+
+
+const ages = [32, 33, 16, 40];
+const result = ages.filter(checkAdult);
+
+function checkAdult(age) {
+  return age >= 18;
+}
+console.log(result);
+
+
+
+
+
+const words = ['spray', 'elite', 'exuberant', 'destruction', 'present'];
+
+const results = words.filter((word) => word.length > 6);
+
+console.log(results);
