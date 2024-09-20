@@ -1,6 +1,14 @@
 
 // Filter 
 
+/*
+
+The filter() method creates a new array containing elements that satisfy a specified condition.
+
+The filter() method skips empty elements and does not change the original array.
+
+*/
+
 const coding = ["Js", "ruby", "Java", "Python", "Cpp"]
 
 const values = coding.forEach( (item) => {
