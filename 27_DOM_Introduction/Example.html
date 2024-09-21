@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dom Example</title>
 </head>
-<body>
+<body style="background-color: #212121; color: #fff;">
     
 </body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    //div.id = "myId"
+    //div.id = Math.random() * 10 + 1   // used to generate random number and 10 is used to multiply in that random number and 1 is used to add that value in random number
+    div.id = Math.round(Math.random() * 10 + 1)
+</script>
 </html>
