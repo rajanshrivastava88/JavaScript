@@ -19,3 +19,14 @@ span {
     display: inline-block;
 }
 
+#grey {
+    background: grey;
+}
+
+#blue {
+    background: blue;
+}
+
+#yellow {
+    background: yellow;
+}
