@@ -23,8 +23,9 @@ body {
 }
 
 #input {
-    width: 80%;
-    border: none;
+    width: 100%;
+    border-radius: 10px;
+    border-color: aqua;
     outline: none;
     padding: 10px 20px;
     font-size: 20px;
@@ -33,7 +34,8 @@ body {
 #searchBtn {
     padding: 10px 20px;
     margin-left: 10px;
-    border: none;
+    border-radius: 10px;
+    border-color: gold;
     background: crimson;
     color: white;
     font-weight: bold;
@@ -52,6 +54,7 @@ body {
 }
 
 /* JavaScript */
+
 mark {
     background: crimson;
 }
