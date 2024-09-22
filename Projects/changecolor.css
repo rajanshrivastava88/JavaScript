@@ -2,10 +2,35 @@ html {
     margin: 0;
 }
 
-nav {
-    text-align: center;
-    margin-top: 40px;
-    
+.button {
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #fff;
+    color: black;
+    border: 2px solid #04AA6D;
+    border-radius: 20px;
+}
+
+.button1:hover{
+    background-color: #04AA6D;
+    color: #fff;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+    border-radius: 20px;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: #fff;
 }
 
 
