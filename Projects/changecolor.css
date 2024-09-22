@@ -2,6 +2,13 @@ html {
     margin: 0;
 }
 
+nav {
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+
 span {
     display: block;
 }
@@ -23,8 +30,8 @@ span {
     background: grey;
 }
 
-#white {
-    background: white;
+#red {
+    background: red;
 }
 
 #blue {
@@ -35,8 +42,8 @@ span {
     background: yellow;
 }
 
-#orange {
-    background: orange;
+#green {
+    background: green;
 }
 
 #purple {
