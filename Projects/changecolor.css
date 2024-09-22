@@ -1,0 +1,21 @@
+html{
+    margin: 0;
+}
+
+span {
+    display: flexbox;
+}
+
+.canvas {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+}
+
+.button {
+    width: 100%;
+    height: 100%;
+    border: solid black 2px;
+    display: inline-block;
+}
+
