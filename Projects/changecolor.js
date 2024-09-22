@@ -5,20 +5,27 @@ const body = document.querySelector("body")
 
 buttons.forEach(function (button){
     console.log(button);
-    button.addEventListener('click', function(e){
-        console.log(e);
-        console.log(e.target);
-        if (e.target.id === 'grey') {
-            body.style.backgroundColor = e.target.id;
+    button.addEventListener('click', function(changeColor){
+        console.log(changeColor);
+        console.log(changeColor.target);
+        if (changeColor.target.id === 'grey') {
+            body.style.backgroundColor = changeColor.target.id;
         }
-        if (e.target.id === 'white') {
-            body.style.backgroundColor = e.target.id;
+        if (changeColor.target.id === 'red') {
+            body.style.backgroundColor = changeColor.target.id;
         }
-        if (e.target.id === 'blue') {
-            body.style.backgroundColor = e.target.id;
+        if (changeColor.target.id === 'blue') {
+            body.style.backgroundColor = changeColor.target.id;
         }
-        if (e.target.id === 'yellow') {
-            body.style.backgroundColor = e.target.id;
+        if (changeColor.target.id === 'yellow') {
+            body.style.backgroundColor = changeColor.target.id;
         }
+        if (changeColor.target.id === 'green') {
+            body.style.backgroundColor = changeColor.target.id;
+        }
+        if (changeColor.target.id === 'purple') {
+            body.style.backgroundColor = changeColor.target.id;
+        }
+
     });
 });
