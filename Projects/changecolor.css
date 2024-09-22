@@ -44,10 +44,10 @@ span {
     text-align: center;
 }
 
-.button {
+.buttons {
     width: 100px;
     height: 100px;
-    border: solid black 2px;
+    border: solid thistle 2px;
     display: inline-block;
 }
 
