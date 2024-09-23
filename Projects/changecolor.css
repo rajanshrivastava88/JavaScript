@@ -36,12 +36,15 @@ html {
 
 span {
     display: block;
+    text-align: center;
 }
 
 .canvas {
     margin: 100px auto 100px;
     width: 80%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttons {
@@ -50,6 +53,8 @@ span {
     border: solid thistle 2px;
     display: inline-block;
     border-radius: 20px;
+    justify-content: center;
+    align-content: center;
 }
 
 #grey {
