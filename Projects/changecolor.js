@@ -8,6 +8,7 @@ buttons.forEach(function (buttons){
     buttons.addEventListener('click', function(changeColor){
         console.log(changeColor);
         console.log(changeColor.target);
+
         if (changeColor.target.id === 'grey') {
             body.style.backgroundColor = changeColor.target.id;
         }
@@ -26,6 +27,5 @@ buttons.forEach(function (buttons){
         if (changeColor.target.id === 'purple') {
             body.style.backgroundColor = changeColor.target.id;
         }
-
     });
 });
