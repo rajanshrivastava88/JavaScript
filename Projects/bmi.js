@@ -17,4 +17,9 @@ function onFormReset() {
     const weight = parseFloat(form.weight.value);
     const height = parseFloat(form.height.value);
   
-  
+    if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+        alert("Please enter a valid weight and height");
+        return;
+      }
+    
+     
