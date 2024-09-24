@@ -75,17 +75,54 @@ h1 {
 }
 
 .calculator button[type="reset"] {
-    background: #444;
-  }
-  
-  .calculator button:hover {
-    filter: brightness(120%);
-  }
+  background: #444;
+}
 
-  .output {
-    text-align: center;
-  }
+.calculator button:hover {
+  filter: brightness(120%);
+}
 
-  .output #bmi {
-    font-size: 4rem;
-  }
+.output {
+  text-align: center;
+}
+
+.output #bmi {
+  font-size: 4rem;
+}
+
+.output #desc strong {
+  text-transform: uppercase;
+}
+
+.bmi-scale {
+  display: flex;
+}
+
+.bmi-scale div {
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 5px solid var(--color);
+  padding: 10px;
+}
+
+.bmi-scale h4 {
+  font-size: 0.75rem;
+  color: slategray;
+}
+
+.underweight {
+  color: var(--underweight);
+}
+
+.healthy {
+  color: var(--normal);
+}
+
+.overweight {
+  color: var(--overweight);
+}
+
+.obese {
+  color: var(--obese);
+}
