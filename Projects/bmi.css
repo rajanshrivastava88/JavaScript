@@ -81,3 +81,11 @@ h1 {
   .calculator button:hover {
     filter: brightness(120%);
   }
+
+  .output {
+    text-align: center;
+  }
+
+  .output #bmi {
+    font-size: 4rem;
+  }
