@@ -73,3 +73,11 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+.calculator button[type="reset"] {
+    background: #444;
+  }
+  
+  .calculator button:hover {
+    filter: brightness(120%);
+  }
