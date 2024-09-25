@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>DOM Documentation</title>
 
     <style>
-        table, th, td {
+        table,
+        th,
+        td {
             border: 1px solid white;
             border-collapse: collapse;
         }
-        th, td {
+
+        th,
+        td {
             background-color: #96D4D4;
             text-align: center;
         }
     </style>
 </head>
+
 <body>
 
     <h1 style="text-align: center;">Finding HTML Elements</h1>
@@ -47,7 +53,7 @@
             <td>Description</td>
         </tr>
         <tr>
-            <td>element.innerHTML =  new html content</td>
+            <td>element.innerHTML = new html content</td>
             <td>Change the inner HTML of an element</td>
         </tr>
         <tr>
@@ -101,5 +107,34 @@
             <td>Adding event handler code to an onclick event</td>
         </tr>
     </table>
+    <h1 style="text-align: center;">Finding HTML Objects</h1>
+    <table style="width: 100%;">
+        <tr>
+            <td>Property</td>
+            <td>Description</td>
+            <td>DOM</td>
+        </tr>
+        <tr>
+            <td>document.anchors</td>
+            <td>Returns all <a> elements that have a name attribute</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>document.applets</td>
+            <td>Deprecated</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>document.baseURI</td>
+            <td>Returns the absolute base URI of the document</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>document.body</td>
+            <td>Returns the <body> element</td>
+            <td>1</td>
+        </tr>
+    </table>
 </body>
+
 </html>
