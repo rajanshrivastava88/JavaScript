@@ -21,3 +21,16 @@ form.addEventListener('submit',function (e){
     }
     
 });
+
+/*
+
+
+if(bmi<18.6){
+    results.innerHTML=`<span>Under weigth :${bmi}</span>`;
+    }else if(bmi>18.6 && bmi<24.9){
+        results.textContent=`Normal Weight:${bmi}`;
+    }else{
+        results.textContent=`Over Weight : ${bmi}`
+    }
+
+*/
