@@ -19,4 +19,31 @@ JavaScript automatically wraps it in a resolved promise.
                 |_____________ Single threaded
 
 
+
+       ---> Execution Context
+                |________________ Execution Context execute one line of code at a time.
+                                    |
+                                    |________ console.log -> 1
+                                    |
+                                    |________ console.log -> 2
+                                    |
+                               _____|______      _____________
+                              | CALL Stack |    | Memory Heap | 
+                              |____________|    |_____________|
+
+               NOTE :- Each operation waits for the last one to complete before executing.               
+
+
+
+
+               Blocking Code                     VS              Non-Blocking Code
+                     |                                                   |
+               It Block the flow of Program.                     It does not block execution.
+                     |                                                   |
+                Read File Sync(Synchronous).                     Read File Async (Asynchronous)
+
+
+
+
+
 */
