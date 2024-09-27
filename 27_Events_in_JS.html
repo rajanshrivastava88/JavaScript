@@ -36,9 +36,9 @@ document.getElementById('lotus').onclick = function() {
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul");
-    // }, false)
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    }, false)  // Event Propagation -> Bubblling up
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
@@ -47,11 +47,14 @@ document.getElementById('lotus').onclick = function() {
     
     // document.getElementById('google').addEventListener('click',function(e){
     //     e.preventDefault();
-    //     e.stopPropagation()
+    //     e.stopPropagation() // Not bubbling -< and it stops Propagation
     //     console.log("google clicked");
     // }, false)
    
     
+
+    // Whenever we click on the image the image should be removed
+
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
         if (e.target.tagName === 'IMG') {
