@@ -10,6 +10,13 @@ Promise Handling: Async functions always return a promise. If a value is returne
 JavaScript automatically wraps it in a resolved promise.
 
 
+          JavaScript   (Talking abput Default JavaScript)
+                |
+                |
+                |_____________ Synchronous
+                |
+                |
+                |_____________ Single threaded
 
 
 */
