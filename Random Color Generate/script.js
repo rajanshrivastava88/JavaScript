@@ -6,4 +6,4 @@ const randomColor = function() {
     for (let i = 0; i < 6; i++) {}
 };
 
-console.log(Math.random() * 16);
+console.log(Math.floor(Math.random() * 16));
