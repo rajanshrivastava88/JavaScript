@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Events </title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+    </style>
 </head>
+
 <body style="background-color: #414141; color: aliceblue; text-align: center;">
     <h2>Amazing Images</h2>
-    <div >
+    <div>
         <ul id="images">
-            <li><img width="300px" height="200" id="lotus" src="https://i.ibb.co/NSzjp4H/pngtree-lotus-flower-jpg-pink-lotus-flower-image-13023952.jpg" alt="lotus"></li>
-            <li><img width="300px" height="200" id="hibiscus-flower" src="https://i.ibb.co/NLpQbDk/Hibiscus-Flower.jpg" alt=""></li>
-            <li><img width="300px" height="200" id="lotus-flower" src="https://i.ibb.co/NSzjp4H/pngtree-lotus-flower-jpg-pink-lotus-flower-image-13023952.jpg" alt=""></li>
-            <li><img width="300px" height="200" id="jerseypics" src="https://i.ibb.co/y5szzbz/pexels-jerseypics-639086.jpg" alt="" ></li>
-            <li><img width="300px" height="200" id="yellow-flower" src="https://i.ibb.co/jz7m3fc/perfect-yellow-flower.jpg" alt="perfect-yellow-flower" alt=""></li>
-            
+            <li><img width="300px" height="200" id="lotus"
+                    src="https://i.ibb.co/NSzjp4H/pngtree-lotus-flower-jpg-pink-lotus-flower-image-13023952.jpg"
+                    alt="lotus"></li>
+            <li><img width="300px" height="200" id="hibiscus-flower" src="https://i.ibb.co/NLpQbDk/Hibiscus-Flower.jpg"
+                    alt=""></li>
+            <li><img width="300px" height="200" id="lotus-flower"
+                    src="https://i.ibb.co/NSzjp4H/pngtree-lotus-flower-jpg-pink-lotus-flower-image-13023952.jpg" alt="">
+            </li>
+            <li><img width="300px" height="200" id="jerseypics"
+                    src="https://i.ibb.co/y5szzbz/pexels-jerseypics-639086.jpg" alt=""></li>
+            <li><img width="300px" height="200" id="yellow-flower"
+                    src="https://i.ibb.co/jz7m3fc/perfect-yellow-flower.jpg" alt="perfect-yellow-flower" alt=""></li>
+            <br>
             <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
         </ul>
-   </div>
+    </div>
 </body>
 <script>
 
-document.getElementById('lotus').onclick = function() {
-    alert("lotus clicked")
-}
+    document.getElementById('lotus').onclick = function () {
+        alert("lotus clicked")
+    }
 
-     // attachEvent()
+    // attachEvent()
     // jQuery - on
 
 
@@ -36,7 +50,7 @@ document.getElementById('lotus').onclick = function() {
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-    document.getElementById('images').addEventListener('click', function(e){
+    document.getElementById('images').addEventListener('click', function (e) {
         console.log("clicked inside the ul");
     }, false)  // Event Propagation -> Bubblling up
 
@@ -44,28 +58,29 @@ document.getElementById('lotus').onclick = function() {
     //     console.log("owl clicked");
     //     e.stopPropagation()
     // }, false)
-    
+
     // document.getElementById('google').addEventListener('click',function(e){
     //     e.preventDefault();
     //     e.stopPropagation() // Not bubbling -< and it stops Propagation
     //     console.log("google clicked");
     // }, false)
-   
-    
+
+
 
     // Whenever we click on the image the image should be removed
 
-    document.querySelector('#images').addEventListener('click', function(e){
+    document.querySelector('#images').addEventListener('click', function (e) {
         console.log(e.target.tagName);
         if (e.target.tagName === 'IMG') {
             console.log(e.target.id);
             let removeIt = e.target.parentNode
             removeIt.remove()
         }
-    
-        
+
+
     })
-    
+
     //removeIt.parentNode.removeChild(removeIt) // This method is also used to remove the images
 </script>
+
 </html>
