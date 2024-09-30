@@ -11,7 +11,6 @@ The reduce() method does not execute the function for empty array elements.
 
 The reduce() method does not change the original array.
 
-
 */
 
 // Mostly used in Shopping cart
@@ -29,7 +28,6 @@ const sumWithInitial = array1.reduce(
 
 //console.log(sumWithInitial);
 // Expected output: 10
-
 
 
 
@@ -74,7 +72,17 @@ console.log(sum);
 
 
 
+const array = [15, 16, 17, 18, 19];
 
+function reducer(accumulator, currentValue, index) {
+  const returns = accumulator + currentValue;
+  console.log(
+    `accumulator: ${accumulator}, currentValue: ${currentValue}, index: ${index}, returns: ${returns}`,
+  );
+  return returns;
+}
+
+array.reduce(reducer);
 
 
 
