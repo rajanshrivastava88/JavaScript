@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start and Stop</title>
+</head>
+
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    const saydate = function (str) {
+        console.log(str, Date.now())
+    }
+
+    let Interval;
+    document.querySelector("#start").addEventListener('click', function () {
+        Interval = setInterval(saydate, 1000, 'Anything')
+
+    })
+
+    document.querySelector("#stop").addEventListener("click", function () {
+        clearInterval(Interval)
+    })
+
+
+</script>
+</html>
+
+<!--These will be used in Console-->
+
+<!--
+
+const sayDate = function (str) {
+        console.log(str, Date.now());
+    }
+
+    const intervalId = setInterval(sayDate, 1000, "hi")
+
+    clearInterval(intervalId)
+
+
+-->
