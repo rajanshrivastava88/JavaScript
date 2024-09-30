@@ -1,5 +1,4 @@
-
-// Map()
+// Map() Method
 
 /*
 map() creates a new array from calling a function for every array element.
@@ -14,7 +13,7 @@ function on every element in the calling array.
 */
 
 const array1 = [1, 4, 9, 16]
-const map1 = array.map((x) => x * 2) // Pass a function to map
+const map1 = array1.map((x) => x * 2) // Pass a function to map
 console.log(map1);
 
 
@@ -62,3 +61,21 @@ const newnum = myNumbr
 console.log(newnum);
 
 
+
+
+const persons = [
+    {firstname : "Rajan", lastname: "Srivastava"},
+    {firstname : "Anish", lastname: "srivastava"},
+    {firstname : "Anand", lastname: "srivastava"}
+];
+
+let fullName = persons.map(getFullName);
+
+function getFullName(items) {
+    return [items.firstname, items.lastname].join(" ");
+}
+
+
+console.log(fullName);
+
+  
