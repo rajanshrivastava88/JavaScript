@@ -27,8 +27,9 @@ const sumWithInitial = array1.reduce(
   initialValue,
 );
 
-console.log(sumWithInitial);
+//console.log(sumWithInitial);
 // Expected output: 10
+
 
 
 
@@ -38,7 +39,7 @@ const myTotals = myNum.reduce( function (acc, currentvalue) {
     return acc + currentvalue
 }, 0)
 
-console.log(myTotals);
+//console.log(myTotals);
 
 
 
@@ -59,7 +60,21 @@ const myNums = [1, 2, 3]
 
 const myTotal = myNums.reduce( (acc, currentvalue) => acc + currentvalue, 0)
 
-console.log(myTotal);
+//console.log(myTotal);
+
+
+
+let objects = [{x: 1}, {x: 2}, {x: 3}];
+
+let sum = objects.reduce(
+    (acc, currentValue) => acc + currentValue.x, 0,
+);
+
+console.log(sum);
+
+
+
+
 
 
 
@@ -83,4 +98,4 @@ const shoppingCart = [
 ]
 
 const priceToPay = shoppingCart.reduce((acc, item) =>acc + item.price, 0)
-console.log(priceToPay);
+//console.log(priceToPay);
