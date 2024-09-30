@@ -60,3 +60,5 @@ const newnum = myNumbr
                 .map( (num) => num + 1)
                 .filter( (num) => num >= 40 )
 console.log(newnum);
+
+
