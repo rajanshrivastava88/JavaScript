@@ -112,12 +112,34 @@ console.log(arr); // Output: [1, 2, 3, 4, 5]
 
 const Arrays = [1,2,3,4,5,6,7,8]
 const Arrays1 = Arrays.slice(0,4)
-console.log(Arrays1);
+//console.log(Arrays1);
 
 
 const Arrays2 = Arrays.splice(2,5)
-console.log(Arrays2);
+//console.log(Arrays2);
+
+
+
+// Slice () Method
+
+
+let arrayOne = [ '⚡️', '🔎', '🔑', '🔩' ];
+let arrayOneSlice = arrayOne.slice(2, 3);  
+
+console.log(arrayOne); // [ '⚡️', '🔎', '🔑', '🔩' ]
+console.log(arrayOneSlice); // [ '🔑' ]
 
 
 
 
+// Splice () Method
+
+
+let arrayTwo = [ '⚡️', '🔎', '🔑', '🔩' ];
+let arrayTwoSlice = arrayOne.slice(2, 3);  
+
+// Update arrayOneSlice
+arrayTwoSlice[2] = '⚡️'
+
+console.log(arrayTwo); // [ '⚡️', '🔎', '🔑', '🔩' ]
+console.log(arrayTwoSlice); // [ '🔑', empty, '⚡️' ]
