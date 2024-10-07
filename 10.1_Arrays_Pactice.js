@@ -64,3 +64,38 @@ console.log(myArr);
 const myArrays = text.split();
 console.log(myArrays);
 
+
+
+/*
+
+What is a shallow copy in JavaScript?
+
+A shallow copy of an arrays or object is one where they both have the same reference in memory. 
+That means that if you change the shallow copy, it may change the original copy too. I say may, 
+since that is not always the case.
+
+Let's look at an example using slice:
+
+*/
+
+let arrayOne = [ '⚡️', '🔎', '🔑', '🔩' ];
+let arrayOneSlice = arrayOne.slice(2, 3);  
+
+console.log(arrayOne); // [ '⚡️', '🔎', '🔑', '🔩' ]
+console.log(arrayOneSlice); // [ '🔑' ]
+
+/*
+
+Here we have an array, which we then slice in the variable arrayOneSlice. Both of these arrays have the same reference in memory,
+ since slice makes a shallow copy of them. So if we try to update arrayOneSlice, it will affect arrayOne too, right?
+
+*/
+
+let arrayTwo = [ '⚡️', '🔎', '🔑', '🔩' ];
+let arrayTwoSlice = arrayOne.slice(2, 3);  
+
+// Update arrayOneSlice
+arrayTwoSlice[2] = '⚡️'
+
+console.log(arrayTwo); // [ '⚡️', '🔎', '🔑', '🔩' ]
+console.log(arrayTwoSlice); // [ '🔑', empty, '⚡️' ]
