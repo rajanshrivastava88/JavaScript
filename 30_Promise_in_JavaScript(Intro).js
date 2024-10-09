@@ -171,4 +171,40 @@ function myFunction(value) {
 }
 
 
+
+Example Using Promise
+
+
+let myPromise = new Promise(function(myResolve, myReject) {
+  setTimeout(function() { myResolve("I love You !!"); }, 3000);
+});
+
+myPromise.then(function(value) {
+  document.getElementById("demo").innerHTML = value;
+});
+
+
+
+Waiting for a file
+
+Example using Callback
+
+
+function getFile(myCallback) {
+  let req = new XMLHttpRequest();
+  req.open('GET', "mycar.html");
+  req.onload = function() {
+    if (req.status == 200) {
+      myCallback(req.responseText);
+    } else {
+      myCallback("Error: " + req.status);
+    }
+  }
+  req.send();
+}
+
+getFile(myDisplayer);
+
+
+
 */
