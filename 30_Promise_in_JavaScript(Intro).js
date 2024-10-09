@@ -60,8 +60,38 @@ let myPromise = new Promise(function(myResolve, myReject) {
 
 // "Consuming Code" (Must wait for a fulfilled Promise)
 myPromise.then(
-  function(value) { /* code if successful */ },
-  function(error) { /* code if some error */ }
+  function(value) {  code if successful  },
+  function(error) {  code if some error  }
 );
+
+
+     When the producing code obtains the result, it should call one of the two callbacks:
+              
+               ___________________________________________________
+              |  When          |       	Call                      |
+              |                |                                  |
+              |  Success	   |     myResolve(result value)      |
+              |                |                                  |
+              |  Error	       |     myReject(error object)       |
+              |________________|__________________________________|
+
+
+              Promise Object Properties
+
+              A JavaScript Promise object can be:
+
+              -Pending
+
+              -Fulfilled
+
+              -Rejected
+
+              The Promise object supports two properties: state and result.
+
+              While a Promise object is "pending" (working), the result is undefined.
+
+              When a Promise object is "fulfilled", the result is a value.
+              
+              When a Promise object is "rejected", the result is an error object.
 
 */
