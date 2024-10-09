@@ -94,4 +94,13 @@ myPromise.then(
               
               When a Promise object is "rejected", the result is an error object.
 
+
+              myPromise.state	              myPromise.result
+
+              "pending"	                    undefined
+              
+              "fulfilled"	                  a result value
+
+              "rejected"	                  an error object
+
 */
