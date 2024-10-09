@@ -124,4 +124,51 @@ Promise.then() takes two arguments, a callback for success and another for failu
 
 Both are optional, so you can add a callback for success or failure only.
 
+
+Example:
+
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+let myPromise = new Promise(function(myResolve, myReject) {
+  let x = 0;
+
+// some code (try to change x to 5)
+
+  if (x == 0) {
+    myResolve("OK");
+  } else {
+    myReject("Error");
+  }
+});
+
+myPromise.then(
+  function(value) {myDisplayer(value);},
+  function(error) {myDisplayer(error);}
+);
+
+
+
+
+JavaScript Promise Examples
+
+To demonstrate the use of promises, we will use the callback examples from the previous chapter:
+
+Waiting for a Timeout
+Waiting for a File
+
+
+Waiting for a Timeout
+
+Example Using Callback
+
+
+setTimeout(function() { myFunction("I love You !!!"); }, 3000);
+
+function myFunction(value) {
+  document.getElementById("demo").innerHTML = value;
+}
+
+
 */
