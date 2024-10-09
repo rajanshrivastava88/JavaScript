@@ -103,4 +103,25 @@ myPromise.then(
 
               "rejected"	                  an error object
 
+
+              You cannot access the Promise properties state and result.
+
+              You must use a Promise method to handle promises.
+
+
+              Promise How To
+              
+              Here is how to use a Promise:
+
+myPromise.then(
+  function(value) { code if successful  },
+  function(error) { code if some error  }
+);
+
+
+
+Promise.then() takes two arguments, a callback for success and another for failure.
+
+Both are optional, so you can add a callback for success or failure only.
+
 */
