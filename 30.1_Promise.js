@@ -40,7 +40,7 @@ promiseThree.then(function(user){
 
 const promiseFour = new Promise(function(resolve, reject){
     setTimeout(function(){
-        let error = false // true (both can be used)
+        let error = true // false (both can be used)
         if (!error) {
             resolve({username: "rajan", password: "123"})
         } else {
@@ -56,5 +56,23 @@ promiseFour.then((user) => {
     console.log(username);
 }).catch(function(error){
     console.log(error);
-    
-})
+}).finally(() => console.log("The promise is either resolved or rejected"))
+
+
+
+/*
+
+// or it can be also used as
+
+promiseFour
+.then((user) => {
+    console.log(user);
+    return user.username
+}).then((username) => {
+    console.log(username);
+}).catch(function(error){
+    console.log(error);
+}).finally(() => console.log("The promise is either resolved or rejected"))
+
+
+*/
