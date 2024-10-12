@@ -76,3 +76,14 @@ promiseFour
 
 
 */
+
+const promiseFive = new Promise(function(resolve, reject) {
+    setTimeout(function(){
+        let error = true
+        if (!error) {
+            resolve({username: "rajan", password: "123"})
+        } else {
+            reject('ERROR: Something went wrong')
+        }
+    }, 1000)
+})
