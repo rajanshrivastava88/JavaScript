@@ -75,15 +75,67 @@ promiseFour
 }).finally(() => console.log("The promise is either resolved or rejected"))
 
 
+
+// promise is a type of Object
+
 */
+
+// Async and await can't handles the error directly
+
+
+
+/*
+
 
 const promiseFive = new Promise(function(resolve, reject) {
     setTimeout(function(){
         let error = true
+
         if (!error) {
-            resolve({username: "rajan", password: "123"})
+            resolve({username: "javascript", password: "123"})
         } else {
-            reject('ERROR: Something went wrong')
+            reject('ERROR: JS went wrong')
         }
     }, 1000)
-})
+});
+
+async function consumePromiseFive(){
+    const response = await promiseFive
+    console.log(response);
+}
+
+consumePromiseFive() 
+
+// This error originated either by throwing inside of an async function without a catch block
+
+
+
+*/
+
+
+const promiseFive = new Promise(function(resolve, reject) {
+    setTimeout(function(){
+        let error = true
+
+        if (!error) {
+            resolve({username: "javascript", password: "123"})
+        } else {
+            reject('ERROR: JS went wrong')
+        }
+    }, 1000)
+});
+
+async function consumePromiseFive(){
+    try {
+        const response = await promiseFive
+    } catch (error) {
+        console.log(error);
+        
+    }
+}
+
+consumePromiseFive() 
+
+
+
+async
