@@ -41,5 +41,4 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 .then((data) => {
     console.log(data);
 })
-.catch((error) => console.log(error);
-)
+.catch((error) => console.log(error))
