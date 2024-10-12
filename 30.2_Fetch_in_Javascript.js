@@ -42,3 +42,9 @@ fetch('https://api.github.com/users/hiteshchoudhary')
     console.log(data);
 })
 .catch((error) => console.log(error))
+
+
+
+// https://fetch.spec.whatwg.org/#fetch-method
+
+// Go through the above Link - Fetch Method 
