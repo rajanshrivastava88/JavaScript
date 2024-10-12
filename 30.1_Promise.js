@@ -113,6 +113,10 @@ consumePromiseFive()
 */
 
 
+
+
+
+/*
 const promiseFive = new Promise(function (resolve, reject) {
     setTimeout(function () {
         let error = true
@@ -136,6 +140,13 @@ async function consumePromiseFive() {
 
 consumePromiseFive()
 
+*/
+
+
+
+
+
+/*
 
 // fetch api data in json format printing
 
@@ -150,3 +161,17 @@ async function getAllUsers() {
 }
 
 getAllUsers()
+
+*/
+
+
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log(data);
+    
+})
+.catch((error) => console.log(error))
