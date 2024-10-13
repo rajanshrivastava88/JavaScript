@@ -22,6 +22,19 @@ let heroPower = {
     }
 }
 
-bject
+Object.prototype.rajan = function() {
+    console.log(`rajan is present in all objects`);
+    
+}
 
-heroPower.rajan()
+Array.prototype.heyRajan = function(){
+    console.log(`Rajan says hello`);
+    
+}
+
+//heroPower.rajan()
+
+myHeros.rajan()
+myHeros.heyRajan()
+
+//heroPower.heyRajan()
