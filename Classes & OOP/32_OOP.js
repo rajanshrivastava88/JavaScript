@@ -47,3 +47,26 @@ console.log(userOne.constructor);
 console.log(userTwo);
 
 // know about new keyword
+
+
+
+
+
+
+
+/*
+
+
+            function ----------------
+                                    |
+                                    |
+                                    |
+            Array -------------------> Object --------> null
+                                    ^
+                                    |
+                                    | 
+            String ------------------
+
+
+
+*/
