@@ -1,4 +1,4 @@
-
+// Object Literals
 
 const user = {
     username: "rajan",
@@ -14,10 +14,19 @@ const user = {
 }
 
 
-
 console.log(user.username)
 console.log(user.getUserDetails());
 // console.log(this);
+
+
+// Constructor Functions -> new
+
+// Constructor functions allow us to create a multiple instanses from only on objects
+
+const promiseOne = new Promise()
+const date = new Date()
+
+
 
 
 function User(username, loginCount, isLoggedIn){
