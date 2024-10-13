@@ -13,7 +13,6 @@ const user = {
 
 }
 
-
 console.log(user.username)
 console.log(user.getUserDetails());
 // console.log(this);
@@ -23,8 +22,8 @@ console.log(user.getUserDetails());
 
 // Constructor functions allow us to create a multiple instanses from only on objects
 
-const promiseOne = new Promise()
-const date = new Date()
+// const promiseOne = new Promise()
+// const date = new Date()
 
 
 
@@ -35,14 +34,16 @@ function User(username, loginCount, isLoggedIn){
     this.isLoggedIn = isLoggedIn
 
     this.greeting = function(){
-        console.log(`Welcome ${this.username}`);
+        console.log(`Welcome to mu Home ${this.username}`);
 
     }
 
     return this
 }
 
-const userOne = new User("hitesh", 12, true)
+const userOne = new User("rajan", 12, true)
 const userTwo = new User("ChaiAurCode", 11, false)
 console.log(userOne.constructor);
-//console.log(userTwo);
+console.log(userTwo);
+
+// know about new keyword
