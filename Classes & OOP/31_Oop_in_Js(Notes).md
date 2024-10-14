@@ -20,6 +20,8 @@ Object literal
 - Instances (new, this)
 
 ## 4 pillers
-Abstraction
-Encapsulation
-Inheritance
+
+- Abstraction
+- Encapsulation
+- Inheritance
+- Polymorphism
