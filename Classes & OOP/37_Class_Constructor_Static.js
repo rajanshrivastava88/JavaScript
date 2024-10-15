@@ -9,6 +9,6 @@ class User {
     }
 
     encryptPassword() {
-        
+        return `${this.password}`
     }
 }
