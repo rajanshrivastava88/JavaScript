@@ -3,10 +3,12 @@
 function SetUsername(username) {
     //complex DB calls
     this.username = username
+    console.log("called");
+    
 }
 
 function createUser(username, email, password){
-    SetUsername(username)
+    SetUsername.call(this, username)  // .call is used to hold the refernce variable (current execution context ko kisi aur function ko pass kar deta hai)
 
     this.email = email
     this.password = password
