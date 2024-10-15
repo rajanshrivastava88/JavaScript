@@ -36,3 +36,28 @@ function Product(name, price) {
   
   console.log(new Food('cheese', 5).name);
   // Expected output: "cheese"
+
+
+
+
+/*
+
+Using call() to invoke a function and specifying the this value
+
+In the example below, when we call greet, the value of this will be bound to object obj, even when greet is not a method of obj.
+
+
+*/
+
+
+function greet() {
+    console.log(this.animal, "typically sleep between", this.sleepDuration);
+  }
+  
+  const obj = {
+    animal: "cats",
+    sleepDuration: "12 and 16 hours",
+  };
+  
+  greet.call(obj); // cats typically sleep between 12 and 16 hours
+  
