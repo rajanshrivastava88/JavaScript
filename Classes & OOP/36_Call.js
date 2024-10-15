@@ -60,4 +60,39 @@ function greet() {
   };
   
   greet.call(obj); // cats typically sleep between 12 and 16 hours
+
   
+
+
+/*
+
+Using call() to invoke a function without specifying the first argument
+
+If the first thisArg parameter is omitted, it defaults to undefined. In non-strict mode, the this value is then substituted 
+with globalThis (which is akin to the global object).
+
+
+*/
+
+globalThis.globProp = "Wisen";
+
+function display() {
+  console.log(`globProp value is ${this.globProp}`);
+}
+
+display.call(); // Logs "globProp value is Wisen"
+
+
+
+// In strict mode, the value of this is not substituted, so it stays as undefined.
+
+
+"use strict";
+
+globalThis.globProp = "Wisen";
+
+function display() {
+  console.log(`globProp value is ${this.globProp}`);
+}
+
+display.call(); // throws TypeError: Cannot read the property of 'globProp' of undefined
