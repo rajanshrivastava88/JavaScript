@@ -78,3 +78,18 @@ class ClassWithStaticMethod {
   // Expected output: "someValue"
   console.log(ClassWithStaticMethod.staticMethod());
   // Expected output: "static method has been called."
+
+
+
+  /*
+
+Using static members in classes
+
+The following example demonstrates several things:
+
+How a static member (method or property) is defined on a class.
+That a class with a static member can be sub-classed.
+How a static member can and cannot be called.
+
+
+  */
