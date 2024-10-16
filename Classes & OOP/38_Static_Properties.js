@@ -14,6 +14,10 @@ replicated across instances.
 
 */
 
+
+
+/*
+
 class User {
     constructor(username) {
         this.username = username
@@ -41,3 +45,36 @@ class Teacher extends User {
 
 const iphone = new Teacher("iphone", "i@phone.com")
 console.log(iphone.createId());
+
+*/
+
+
+
+/*
+
+There are some additional syntax restrictions:
+
+The name of a static property (field or method) cannot be prototype.
+
+The name of a class field (static or instance) cannot be constructor.
+
+
+*/
+
+
+
+
+class ClassWithStaticMethod {
+    static staticProperty = 'someValue';
+    static staticMethod() {
+      return 'static method has been called.';
+    }
+    static {
+      console.log('Class static initialization block called');
+    }
+  }
+  
+  console.log(ClassWithStaticMethod.staticProperty);
+  // Expected output: "someValue"
+  console.log(ClassWithStaticMethod.staticMethod());
+  // Expected output: "static method has been called."
