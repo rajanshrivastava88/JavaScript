@@ -84,3 +84,25 @@ init();
 
 
 ```
+
+init() creates a local variable called name and a function called displayName(). 
+The displayName() function is an inner function that is defined inside init() and is available only within the body of the init() function. 
+
+Note that the displayName() function has no local variables of its own. However, since inner functions have access to the variables of outer scopes, displayName() can access the variable name declared in the parent function, init().
+
+
+
+## Scoping with let and const
+
+Traditionally (before ES6), JavaScript variables only had two kinds of scopes: function scope and global scope. Variables declared with var are either function-scoped or global-scoped, depending on whether they are declared within a function or outside a function. This can be tricky, because blocks with curly braces do not create scopes:
+
+```javascript
+
+if (Math.random() > 0.5) {
+  var x = 1;
+} else {
+  var x = 2;
+}
+console.log(x);
+
+```
