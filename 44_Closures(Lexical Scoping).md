@@ -43,3 +43,19 @@ In the first example, b is a local variable.
 A local variable can only be used inside the function where it is defined. It is hidden from other functions and other scripting code.
 
 Global and local variables with the same name are different variables. Modifying one, does not modify the other.
+
+
+
+- Note
+
+- Variables created without a declaration keyword (var, let, or const) are always global, even if they are created inside a function.
+
+```javascript
+
+function myFunction() {
+  a = 4;
+}
+
+console.log(myFunction())
+
+```
