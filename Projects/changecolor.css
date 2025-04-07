@@ -21,7 +21,7 @@ a {
     text-decoration: none;
 }
 
-.button1:hover{
+.button1:hover {
     background-color: #04AA6D;
     color: #fff;
 }
@@ -37,7 +37,6 @@ a {
     background-color: #008CBA;
     color: #fff;
 }
-
 
 span {
     display: block;
