@@ -7,8 +7,8 @@ hold various types of data, including numbers, strings, arrays, objects, functio
 */
 
 const accountId = 123456
-let accountEmail="rajan@gmail.com"
-var accountPassword="98765"
+let accountEmail = "rajan@gmail.com"
+var accountPassword = "98765"
 accountAddress = "Delhi"
 let accountState;  // undefined value
 
@@ -29,9 +29,9 @@ beacuse of issue in block scope and functional scope.
 
 */
 
-accountEmail="rajansri88@gmail.com"
-accountPassword= 123456
-accountAddress="Utter Pradesh"
+accountEmail = "rajansri88@gmail.com"
+accountPassword = 123456
+accountAddress = "Utter Pradesh"
 console.table([accountId, accountEmail, accountPassword, accountAddress, accountState])
 
 
@@ -75,8 +75,8 @@ codebases where variable names might clash due to hoisting.
 
 
 const myId = 9898
-let myEmail="anish@gmail.com"
-var myPassword="5432"
+let myEmail = "anish@gmail.com"
+var myPassword = "5432"
 myAddress = "Noida"
 let myState;
 
@@ -87,9 +87,9 @@ let myState;
 
 
 
-myEmail="srivastavaji88@gmail.com"
-myPassword= 123456
-myAddress="Utter Pradesh"
+myEmail = "srivastavaji88@gmail.com"
+myPassword = 123456
+myAddress = "Utter Pradesh"
 console.table([myId, myEmail, myPassword, myAddress, myState])
 
 // Except const variable value all other variable (var, let) value has changed
