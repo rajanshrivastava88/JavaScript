@@ -4,7 +4,7 @@
 const name = "Rajan"
 const repoCount = 50
 
-console.log(name + repoCount +  " Value");
+console.log(name + repoCount + " Value");
 
 //console.log(`Hello my name is ${name} and my repo count is ${repoCount}`); // This is known as string interpolation
 
@@ -38,7 +38,7 @@ console.log(gameName.indexOf('r')); // indexOf shows the 'r' is placed at which 
 const newString = gameName.substring(0, 4) // it will take characters from 0 to 4 means => raja
 console.log(newString);
 
-const anotherString = gameName.slice(1, 4) 
+const anotherString = gameName.slice(1, 4)
 console.log(anotherString);
 
 const newStringOne = "   rajan    "
@@ -69,7 +69,7 @@ console.log(gameName.split('-'));
 
 
 let text = "HELLO WORLD";
-let letter = text.charAt(text.length-1);  // Charat prototype
+let letter = text.charAt(text.length - 1);  // Charat prototype
 
 //console.log(letter);
 
