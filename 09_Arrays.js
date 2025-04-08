@@ -2,7 +2,7 @@
 
 // Array =>In javascript array is a collection of elements in which we can store any types of data
 
-const myArray = [0, 1, 2, 6, 8, "Rajan", "Tushar", 9.5 ]
+const myArray = [0, 1, 2, 6, 8, "Rajan", "Tushar", 9.5]
 //console.log(myArray[7]);
 
 const myHeros = ["Shaktiman", "Baalveer", "Soanpari"]
@@ -16,7 +16,7 @@ const myArray2 = new Array(1, 2, 3, 4, 5, 6, 7, 8)
 // Array Methods
 
 myArray.push(10)  // push() method is used to add elements in the array from the back side
-myArray.push(15) 
+myArray.push(15)
 //console.log(myArray);
 
 myArray.pop()  // pop() use as a method and we can't write anything inside the pop
@@ -110,12 +110,12 @@ console.log(arr); // Output: [1, 2, 3, 4, 5]
 
  */
 
-const Arrays = [1,2,3,4,5,6,7,8]
-const Arrays1 = Arrays.slice(0,4)
+const Arrays = [1, 2, 3, 4, 5, 6, 7, 8]
+const Arrays1 = Arrays.slice(0, 4)
 //console.log(Arrays1);
 
 
-const Arrays2 = Arrays.splice(2,5)
+const Arrays2 = Arrays.splice(2, 5)
 //console.log(Arrays2);
 
 
@@ -123,8 +123,8 @@ const Arrays2 = Arrays.splice(2,5)
 // Slice () Method
 
 
-let arrayOne = [ '⚡️', '🔎', '🔑', '🔩' ];
-let arrayOneSlice = arrayOne.slice(2, 3);  
+let arrayOne = ['⚡️', '🔎', '🔑', '🔩'];
+let arrayOneSlice = arrayOne.slice(2, 3);
 
 console.log(arrayOne); // [ '⚡️', '🔎', '🔑', '🔩' ]
 console.log(arrayOneSlice); // [ '🔑' ]
@@ -135,8 +135,8 @@ console.log(arrayOneSlice); // [ '🔑' ]
 // Splice () Method
 
 
-let arrayTwo = [ '⚡️', '🔎', '🔑', '🔩' ];
-let arrayTwoSlice = arrayOne.slice(2, 3);  
+let arrayTwo = ['⚡️', '🔎', '🔑', '🔩'];
+let arrayTwoSlice = arrayOne.slice(2, 3);
 
 // Update arrayOneSlice
 arrayTwoSlice[2] = '⚡️'
