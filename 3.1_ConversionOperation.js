@@ -2,30 +2,30 @@
 
 
 let value = 3
-let  negativevalue = -value
+let negativevalue = -value
 console.log(negativevalue);    // o/p = -3
 
 
-console.log(2+2); // 4
-console.log(2-2); // 0
-console.log(2*2); // 4
-console.log(2**3); // 8 (exponentiation operator) 
-console.log(2/3); //0.66
-console.log(2%3); // 2
+console.log(2 + 2); // 4
+console.log(2 - 2); // 0
+console.log(2 * 2); // 4
+console.log(2 ** 3); // 8 (exponentiation operator) 
+console.log(2 / 3); //0.66
+console.log(2 % 3); // 2
 
 
-let str1= "Jai Maa"
-let str2= " Sarswati Ji"
-let str3= str1 + str2
+let str1 = "Jai Maa"
+let str2 = " Sarswati Ji"
+let str3 = str1 + str2
 console.log(str3); // o/p - Jai Maa Sarswati Ji
 
 
 console.log(1 + "2"); // No is Merged 12
-console.log("1" +3); // No is Merged 12
-console.log("1" + 2 +2); // No is merged 122
+console.log("1" + 3); // No is Merged 12
+console.log("1" + 2 + 2); // No is merged 122
 console.log(1 + 2 + "2"); // 1+2+"2 => 1+2=3 "2" => 32 merged
 
-console.log( (3+4) * 5 % 3); // (3+4) * 5 % 3 => (7) * 5%3 => 35 % 3 => 2 reminder. so, 2 will be the answer.
+console.log((3 + 4) * 5 % 3); // (3+4) * 5 % 3 => (7) * 5%3 => 35 % 3 => 2 reminder. so, 2 will be the answer.
 
 
 console.log(+true); // o/p = 1
@@ -33,11 +33,11 @@ console.log(+true); // o/p = 1
 console.log(true); // true ans
 
 let num1, num2, num3 = 1 // NaN
-let num4= num1+num2+num3
+let num4 = num1 + num2 + num3
 console.log(num4);
 
 
-num1 = num2 = num3 = 2+2
+num1 = num2 = num3 = 2 + 2
 console.log(num1)
 
 
@@ -94,7 +94,7 @@ undefined, NaN, false, and empty strings ("") convert to false, and truthy value
 var num = 10;
 var bool = Boolean(num); // Converts number to boolean
 console.log(bool);
-console.log(typeof(bool));
+console.log(typeof (bool));
 
 
 let nums = false;
@@ -120,7 +120,7 @@ the number to a string and perform string concatenation.
 var num = 10;
 var str = "Number is: " + num; // Implicit conversion to string
 console.log(str);
-console.log(typeof(str));
+console.log(typeof (str));
 
 
 var num = 80;
@@ -129,7 +129,7 @@ console.log(str);
 
 
 let no = 88
-let noIS = "The Number is: " +no;
+let noIS = "The Number is: " + no;
 console.log(noIS);
 console.log(typeof no);
 
@@ -148,19 +148,19 @@ parseInt(), and parseFloat().
 
 
 let strs = "10";
-let numss ="Num is:" +strs; // Explicit conversion to number using unary operator
+let numss = "Num is:" + strs; // Explicit conversion to number using unary operator
 console.log(numss);
-console.log(typeof(numss));
+console.log(typeof (numss));
 
 
 let strings = 80;
-let numbers ="Number is:" +strings; 
+let numbers = "Number is:" + strings;
 console.log(numbers);
-console.log(typeof(numbers));
+console.log(typeof (numbers));
 
 
 let st = 80;
-let nu ="Number is:" -st; 
+let nu = "Number is:" - st;
 
 console.log(nu); // NaN
-console.log(typeof(nu));
+console.log(typeof (nu));
