@@ -42,9 +42,9 @@ console.log(url.includes("najar"));
 
 
 let text = "HELLO WORLD";
-let letter1 = text.charAt(text.length-1);
-let letter2 = text.charAt(text.length-2);
-let letter3 = text.charAt(text.length-3);
+let letter1 = text.charAt(text.length - 1);
+let letter2 = text.charAt(text.length - 2);
+let letter3 = text.charAt(text.length - 3);
 console.log(letter1, letter2, letter3);
 
 
