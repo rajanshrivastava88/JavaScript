@@ -63,5 +63,3 @@ console.log(result);
 let text1 = "HELLO WORLD";
 let letter = text1.charAt(0);
 console.log(letter);
-
-
