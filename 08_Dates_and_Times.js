@@ -12,7 +12,7 @@ let myCreatedDate = new Date(2024, 0, 20)  // the months start from 0 menas janu
 console.log(myCreatedDate.toDateString());
 
 
-let myCreatedDate1 = new Date(2024, 0, 20, 5, 3)  
+let myCreatedDate1 = new Date(2024, 0, 20, 5, 3)
 console.log(myCreatedDate1.toLocaleString());
 
 
@@ -30,7 +30,7 @@ console.log(myTimeStamp);
 console.log(myCreatedDate.getTime());
 //console.log(Math.floor(Date.now()//1000));
 
-console.log(Math.floor(Date.now()/(60*60*24*1000)));
+console.log(Math.floor(Date.now() / (60 * 60 * 24 * 1000)));
 
 let newDate = new Date()
 console.log(newDate);
@@ -40,6 +40,6 @@ console.log(newDate.getDay());
 
 `${newDate.getDay()} and the time`
 
-newDate.toLocaleString ('default', {
+newDate.toLocaleString('default', {
     weekday: "long",
 });
