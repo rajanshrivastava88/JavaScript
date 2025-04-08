@@ -59,7 +59,7 @@ let isLoggedIn = false
 // 5. null => standalone value
 // 6. undefined => variable defined but value not defined
 // 7. symbol => unique
- 
+
 
 // object
 
