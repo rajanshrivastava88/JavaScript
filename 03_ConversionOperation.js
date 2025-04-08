@@ -8,7 +8,7 @@ Conversion Operation =>> you can perform various types of conversions to convert
 let score = "abc33" // "abc123", if valuee is null = 0, true=1, undefined
 
 console.log(typeof score); // function (it call after compilation)
-console.log(typeof(score));  // method (it call at same time and run time )
+console.log(typeof (score));  // method (it call at same time and run time )
 
 
 let valueInNumber = Number(score)  // Number() function is used to covert score value(which is in the form of string) into the number
