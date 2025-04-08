@@ -20,7 +20,7 @@ console.log(all_new_heros);
 
 
 const fruits = new Array("Apple", "Mangos", "Grapes", "Bananas")
-const vegitables =  new Array("Potato", "Ladyfinger", "Culiflower", "Onion")
+const vegitables = new Array("Potato", "Ladyfinger", "Culiflower", "Onion")
 
 
 //fruits.push(vegitables) // through this technique the array and sub array will be occur
@@ -33,8 +33,9 @@ const mixture = fruits.concat(vegitables, vegitables) // in concatinate one arra
 const mixtures = [...vegitables, ...fruits] // in spread no array is fixed we can exchanges
 //console.log(mixtures);
 
-const abcArray = [12, 21, 23, [123, 32], 8, [1, [2, 4, [23, 123, [34, 98, [78], 54], 45], 5, 3], 88], ,12, 34,99]
-const defArray = abcArray.flat(3) // flat is used to Returns a new array and all sub-array elements concatenated into a recursively up to the specified depth
+const abcArray = [12, 21, 23, [123, 32], 8, [1, [2, 4, [23, 123, [34, 98, [78], 54], 45], 5, 3], 88], , 12, 34, 99]
+const defArray = abcArray.flat(3) // flat is used to Returns a new array and all sub-array elements
+//  concatenated into a recursively up to the specified depth
 
 console.log(defArray);
 
@@ -42,7 +43,7 @@ console.log(defArray);
 console.log(Array.isArray("Apple", "Banana")); // false beacause it is not an array it is string
 console.log(Array.isArray(["Apple", "Banana"])); // its true because it is a array
 console.log(Array.from("Apple"));
-console.log(Array.from({name: "Apple"})); // interesting (empty array confuse between keys and values array)
+console.log(Array.from({ name: "Apple" })); // interesting (empty array confuse between keys and values array)
 
 
 let marks1 = 150
