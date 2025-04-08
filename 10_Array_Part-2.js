@@ -43,14 +43,16 @@ console.log(defArray);
 console.log(Array.isArray("Apple", "Banana")); // false beacause it is not an array it is string
 console.log(Array.isArray(["Apple", "Banana"])); // its true because it is a array
 console.log(Array.from("Apple"));
-console.log(Array.from({ name: "Apple" })); // interesting (empty array confuse between keys and values array)
+console.log(Array.from({ name: "Apple" })); // interesting (empty array confuse between keys and 
+// values array)
 
 
 let marks1 = 150
 let marks2 = 200
 let marks3 = 230
 
-console.log(Array.of(marks1, marks2, marks3)); // of is used to convert all the variable values into array
+console.log(Array.of(marks1, marks2, marks3)); // of is used to convert all the variable values into
+//  array
 
 
 const hindi = 88
