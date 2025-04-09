@@ -1,30 +1,30 @@
 /*
 
-Promise :- The Promise object represents the eventual completion (or failure) of an asynchronous 
+Promise :- The Promise object represents the eventual completion (or failure) of an asynchronous
            operation and its resulting value.
 
 
-           A Promise is a proxy for a value not necessarily known when the promise is created. 
-           It allows you to associate handlers with an asynchronous action's eventual success 
-           value or failure reason. This lets asynchronous methods return values like synchronous 
-           methods: instead of immediately returning the final value, the asynchronous method 
+           A Promise is a proxy for a value not necessarily known when the promise is created.
+           It allows you to associate handlers with an asynchronous action's eventual success
+           value or failure reason. This lets asynchronous methods return values like synchronous
+           methods: instead of immediately returning the final value, the asynchronous method
            returns a promise to supply the value at some point in the future.
 
 
            A Promise is in one of these states:
-           
+
            pending: initial state, neither fulfilled nor rejected.
-           
+
            fulfilled: meaning that the operation was completed successfully.
-           
+
            rejected: meaning that the operation failed.
 
 
-           The eventual state of a pending promise can either be fulfilled with a value or rejected 
-           with a reason (error). When either of these options occur, the associated handlers queued 
-           up by a promise's then method are called. If the promise has already been fulfilled or 
-           rejected when a corresponding handler is attached, the handler will be called, so there 
-           is no race condition between an asynchronous operation completing and its handlers being 
+           The eventual state of a pending promise can either be fulfilled with a value or rejected
+           with a reason (error). When either of these options occur, the associated handlers queued
+           up by a promise's then method are called. If the promise has already been fulfilled or
+           rejected when a corresponding handler is attached, the handler will be called, so there
+           is no race condition between an asynchronous operation completing and its handlers being
            attached.
 
 */
@@ -49,7 +49,7 @@ JavaScript Promise Object :
 A Promise contains both the producing code and calls to the consuming code:
 
 
-Promise Syntax: 
+Promise Syntax:
 
 let myPromise = new Promise(function(myResolve, myReject) {
 // "Producing Code" (May take some time)
@@ -66,7 +66,7 @@ myPromise.then(
 
 
      When the producing code obtains the result, it should call one of the two callbacks:
-              
+
                ___________________________________________________
               |  When          |       	Call                      |
               |                |                                  |
@@ -91,14 +91,14 @@ myPromise.then(
               While a Promise object is "pending" (working), the result is undefined.
 
               When a Promise object is "fulfilled", the result is a value.
-              
+
               When a Promise object is "rejected", the result is an error object.
 
 
               myPromise.state	              myPromise.result
 
               "pending"	                    undefined
-              
+
               "fulfilled"	                  a result value
 
               "rejected"	                  an error object
@@ -110,7 +110,7 @@ myPromise.then(
 
 
               Promise How To
-              
+
               Here is how to use a Promise:
 
 myPromise.then(
