@@ -35,13 +35,13 @@ indicate errors (404, 504, etc.). Instead, a then() handler must check the Respo
 // getAllUsers()
 
 fetch('https://api.github.com/users/hiteshchoudhary')
-.then((response) => {
-    return response.json()
-})
-.then((data) => {
-    console.log(data);
-})
-.catch((error) => console.log(error))
+    .then((response) => {
+        return response.json()
+    })
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => console.log(error))
 
 
 
